@@ -1,0 +1,42 @@
+@media screen and (width >=62.5em) {
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(241, 100%, 89%);
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .all {
+        display: flex;
+        background-color: white;
+        border-radius: 2em;
+    }
+
+    .container1 {
+        width: 22em;
+        border-radius: 2em;
+        padding: 2.4em;
+    }
+
+    .resultIndicator {
+        font-size: 1.4em;
+    }
+
+    .result {
+        width: 10em;
+        height: 10em;
+        font-size: 1.285em;
+    }
+
+    .container2 {
+        background-color: rgb(255 255 255);
+        width: 24em;
+        border-radius: 2em;
+    }
+
+    .continue-btn {
+        margin: 2em 0;
+    }
+}

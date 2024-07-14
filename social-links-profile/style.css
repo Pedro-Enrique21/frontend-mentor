@@ -1,0 +1,95 @@
+@font-face {
+	font-family: "Inter-Bold", "inter-Regular", "Inter-SemiBold", "Inter";
+	src:
+		url("static/Inter-Bold.ttf") format("truetype"),
+		url("static/Inter-Regular.ttf") format("truetype"),
+		url("static/Inter-SemiBold.tff") format("truetype");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Inter-Regular;
+}
+
+body {
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #141414;
+	color: white;
+}
+
+.container {
+	background-color: #1F1F1F;
+	padding: 2em;
+	border-radius: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.name {
+	margin-bottom: .4em;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+img {
+	width: 5em;
+	border-radius: 50%;
+	margin-bottom: 1.4em;
+}
+
+.location {
+	color: hsl(75, 94%, 57%);
+	font-size: .9em;
+	font-style: normal;
+	font-weight: bold;
+}
+
+p {
+	margin: 1.9em 0 1.6em;
+	font-size: .8em;
+}
+
+ul {
+	list-style-type: none;
+	text-align: center;
+	width: 17.5rem;
+}
+
+ul li a {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+	padding: .6em;
+	border-radius: .6em;
+	background-color: #333333;
+	margin-bottom: 1em;
+	min-width: 100%;
+	font-weight: bold;
+	transition: all .5s;
+	border: 2px solid rgb(0 0 0 / 0);
+}
+
+ul li a:hover {
+	background-color: hsl(0, 0%, 30%);
+	border-bottom: 2px solid hsl(75, 94%, 57%);
+}
+
+@media screen and (width <=24.0625em) {
+	* {
+		font-size: .95em;
+	}
+
+	ul {
+		width: 14rem;
+	}
+}

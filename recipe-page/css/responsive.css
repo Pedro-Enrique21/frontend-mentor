@@ -1,0 +1,24 @@
+@media screen and (width >=56.25em) {
+    body {
+        width: 93%;
+        margin: 2.6em auto;
+        font-size: 1.4em;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    img {
+        border-radius: .6em;
+    }
+
+    h1 {
+        font-size: 3em;
+        width: 100%;
+    }
+
+    figcaption {
+        width: 100%;
+    }
+}

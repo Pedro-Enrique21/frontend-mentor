@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 1.125 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Hanken Grotesk";
+}
+
+.container1 {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 2em 2.4em;
+    border-radius: 0 0 2.4em 2.4em;
+}
+
+
+.resultIndicator {
+    margin-bottom: 1.2em;
+    color: rgb(255 255 255 / .8)
+}
+
+.result {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(256, 72%, 46%, 0));
+    width: 9em;
+    height: 9em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2em;
+}
+
+.result span {
+    display: block;
+}
+
+.resultPoint {
+    font-size: 3.4em;
+    font-weight: bold;
+    margin-bottom: .1em;
+}
+
+.resultTotal {
+    text-align: center;
+    opacity: .4;
+}
+
+.resultAnalyze {
+    margin-bottom: .4em;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.resultSubtitles {
+    font-weight: normal;
+    opacity: .7;
+    line-height: 1.4;
+}
+
+/* font-format-container1 */
+
+.resultIndicator,
+.resultSubtitles {
+    font-size: 1.125em;
+    text-align: center;
+}
+
+/* ------------- */
+
+.container2 {
+    padding: 0 1.8em;
+    font-size: 1.125em;
+}
+
+.summary {
+    font-size: 1.14em;
+    margin: 1.2em 0;
+    color: hsl(224, 30%, 27%);
+    font-weight: bold;
+}
+
+.points .listPoint {
+    padding: .9em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+    border-radius: .6em;
+}
+
+.points .reaction {
+    background-color: hsl(0 100% 67% / .05);
+    color: hsl(0, 100%, 67%);
+}
+
+.points .memory {
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(39 100% 56% / .05);
+}
+
+.points .verbal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166 100% 37% / .05);
+}
+
+.points .visual {
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(241 81% 54% / .05);
+}
+
+.points .pointsValue {
+    color: rgb(0 0 0/ .4);
+    font-weight: bold;
+}
+
+.points .summaryPoint {
+    color: rgb(0 0 0);
+}
+
+.points_identify {
+    display: flex;
+    gap: .4em;
+}
+
+.continue-btn {
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 2em;
+    display: block;
+}
