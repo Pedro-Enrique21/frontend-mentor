@@ -1,0 +1,50 @@
+@media screen and (width <=1440px) {
+    body {
+        font-size: .76rem;
+    }
+
+    .person {
+        gap: 1rem;
+    }
+
+    .indentity {
+        font-size: .7rem;
+    }
+
+    .verified {
+        font-size: .6rem;
+    }
+
+    .gridContainer {
+        width: 65rem;
+        height: 35rem;
+    }
+}
+
+@media screen and (width <=23.4375em) {
+    body {
+        display: block;
+    }
+
+    .gridContainer {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+        margin: 2rem auto;
+    }
+
+    .article {
+        width: 100%;
+        gap: 10px;
+        box-shadow: 5px 20px 40px rgba(0, 0, 0, 0.13);
+    }
+
+    .article3 {
+        order: 1
+    }
+
+    .article>img {
+        right: 2.6em;
+    }
+}

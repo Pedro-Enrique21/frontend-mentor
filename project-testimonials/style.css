@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-font-white: white;
+    --color-font-backgroundWhite: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    /* font-size: 81.25%; */
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #EDF2F8;
+}
+
+main {
+    width: 100%;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.8em 2.6em;
+    width: 85rem;
+    height: 44rem;
+    margin: auto;
+}
+
+.article {
+    border-radius: .6rem;
+    padding: 1.8rem 2.4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 5px 20px 40px rgba(0, 0, 0, 0.212);
+}
+
+.article1 {
+    background-color: #733fc8;
+    color: var(--color-font-white);
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.article2 {
+    background-color: #49556B;
+    color: var(--color-font-white);
+}
+
+.article3 {
+    background-color: white;
+    grid-area: 1 / 4 / 3 / -1;
+}
+
+.article4 {
+    background-color: white;
+}
+
+.article5 {
+    background-color: #18202D;
+    color: var(--color-font-white);
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+.person {
+    display: flex;
+    gap: 1.4rem;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+img:not(article > img) {
+    border-radius: 50%;
+    width: 2.4em;
+}
+
+article>img {
+    width: 8em;
+    position: absolute;
+    top: 0;
+    right: 7em;
+}
+
+.verified {
+    font-size: .86rem;
+}
+
+
+h2 {
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+
+p {
+    filter: opacity(.7);
+    line-height: 1.4;
+    position: relative;
+    z-index: 1;
+}

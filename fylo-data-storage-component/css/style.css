@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: lighter;
+    font-style: normal;
+    border: none;
+    outline: none;
+}
+
+:root {
+    --font-weight-content2: normal;
+}
+
+html {
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    background-image: url("..//images/bg-mobile.png");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    background-color: #1E2C69;
+    padding: 2.2em;
+    width: 20em;
+}
+
+.container1 {
+    margin-bottom: 1em;
+    border-radius: .5em 6em .5em .5em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+}
+
+.container1 .datas {
+    display: flex;
+    gap: 1em;
+}
+
+.container1 .datas button {
+    background-color: hsl(229, 57%, 11%);
+    width: 3.6em;
+    height: 3.6em;
+    border-radius: .8em;
+}
+
+.container2 {
+    border-radius: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3.2em;
+}
+
+.sizeInfo {
+    margin-bottom: .8em;
+    font-size: .8em;
+}
+
+.sizeInfo div b {
+    font-weight: bold;
+}
+
+.sizeBar {
+    width: 100%;
+}
+
+.sizeBar .used::after {
+    content: "";
+    width: 100%;
+    display: block;
+    background-color: hsl(229, 57%, 11%);
+    height: 1.1em;
+    border-radius: 2em;
+    margin-bottom: .4em;
+    position: relative;
+}
+
+.sizeBar .usedProgress::after {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    width: 12rem;
+    height: .75rem;
+    transform: translate(.185em, .185em);
+    z-index: 1;
+    border-radius: 2em;
+}
+
+.sizeBar .usedProgress-botton::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: .85em;
+    height: .85em;
+    z-index: 2;
+    transform: translate(11.4em, .13em);
+}
+
+.sizeBarInfo {
+    display: flex;
+    justify-content: space-between;
+    font-size: .75em;
+}
+
+.sizeBarInfo b {
+    font-weight: normal;
+}
+
+.sizeInfoVisual {
+    background-color: white;
+    color: black;
+    padding: 1em 1.4em;
+    position: absolute;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    column-gap: .6em;
+    margin: auto;
+    transform: translateY(4.75em);
+    border-radius: .8em;
+}
+
+.sizeInfoVisual span {
+    font-size: 2.2em;
+    font-weight: bold;
+}

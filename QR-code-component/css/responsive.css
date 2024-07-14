@@ -1,0 +1,14 @@
+@media screen and (width <=21.25em) {
+    .qrcode-section {
+        max-width: 19em;
+    }
+
+    .qrcode-Image img {
+        max-width: 17em
+    }
+
+    .content {
+        width: 17rem;
+        font-size: .9em;
+    }
+}

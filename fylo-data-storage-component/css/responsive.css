@@ -1,0 +1,58 @@
+@media screen and (width >=90em) {
+    body {
+        background-image: url("..//images/bg-desktop.png"),
+            linear-gradient(hsl(229, 57%, 11%), hsl(229, 57%, 11%))
+    }
+
+    .container1 {
+        display: inline-block;
+        margin-right: 1.4em;
+    }
+
+    .logo {
+        margin-bottom: 1.6em;
+    }
+
+    .container2 {
+        display: inline-block;
+        padding-bottom: 2.9em;
+        width: 35em;
+    }
+
+    .sizeBar .usedProgress::after {
+        width: 24em;
+    }
+
+    .sizeBar .usedProgress-botton::after {
+        transform: translate(23.4em, .140em);
+    }
+
+    .sizeInfoVisual {
+        transform: translate(19.6em, -9em);
+    }
+
+    .balloon::after {
+        content: "";
+        background-color: white;
+        position: absolute;
+        width: 1.2em;
+        height: 2em;
+        display: block;
+        transform: translate(.224em, 1.5em);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 30%);
+    }
+}
+
+@media screen and (width <=21.875em) {
+    .container {
+        width: 100%;
+    }
+
+    .sizeBar .usedProgress::after {
+        width: 10em;
+    }
+
+    .sizeBar .usedProgress-botton::after {
+        transform: translate(9.5em, .14em);
+    }
+}
