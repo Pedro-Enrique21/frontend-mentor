@@ -1,0 +1,156 @@
+:root {
+    --illustration-width-360px: 21.5em;
+    --illustration-width-1024px: 22em;
+    --illustration-width-1440px: 26em;
+}
+
+@media screen and (width >= 22.5em) {
+    html {
+        font-size: .98em;
+    }
+
+    .imgWrapper img {
+        width: var(--illustration-width-360px);
+    }
+
+    .content-illustration img {
+        width: var(--illustration-width-360px);
+    }
+}
+
+@media screen and (width >= 25em) {
+    .wrapper-form input[type="submit"] {
+        width: 26em;
+    }
+
+    .section3-form input[type="submit"] {
+        width: 26em;
+    }
+}
+
+@media screen and (width >= 48em) {
+    html {
+        font-size: 1.4em;
+    }
+
+    .section3-form input[type="email"]::placeholder {
+        font-size: 1em;
+    }
+
+    .wrapper-form {
+        display: flex;
+        gap: .6em;
+    }
+
+    .wrapper-form input[type="email"] {
+        margin-bottom: 0;
+    }
+
+    .section3-form {
+        display: flex;
+        gap: .6em;
+    }
+
+    .section3-form input[type="email"] {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (width >= 64em) {
+    .header {
+        padding: 2em;
+    }
+
+    .wrapper-container {
+        padding: 1em 6em;
+    }
+
+    .wrapper-primary {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 4em;
+        text-align: left;
+    }
+
+    .imgWrapper img {
+        width: var(--illustration-width-1024px);
+    }
+    
+    .curve {
+        display: none;
+    }
+    
+    .content-illustration img {
+        width: var(--illustration-width-1024px)
+    }
+
+    .curveDesktop {
+        display: block;
+        width: 100%;
+    }
+
+    .section2-flex {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .section2-flex article {
+        font-size: .8em;
+    }
+
+    .content-illustration img {
+        margin-bottom: 0;
+    }
+
+    .content-article h2 {
+        text-align: left;
+        font-size: 1.8em;
+        margin: 1rem 0;
+    }
+
+    .content-article p {
+        margin-bottom: 1em;
+    }
+
+    .testimonial-article h3 {
+        margin: 2em 0;
+        text-align: left;
+    }
+
+    .testimonial-contentPerson {
+        width: 30em;
+    }
+
+    .testimonial-contentPerson p {
+        font-size: 1em;
+    }
+
+    .contentPerson-testimonial img {
+        width: 3em;
+    }
+
+    .contentPerson-testimonial .identify .qualify {
+        font-size: .8em;
+    }
+
+    footer {
+        flex-direction: row;
+        font-size: .8em;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (width >= 90em) {
+    .imgWrapper img {
+        width: var(--illustration-width-1440px);
+    }
+
+    .content-illustration img {
+        width: var(--illustration-width-1440px);
+    }
+}
