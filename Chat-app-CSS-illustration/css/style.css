@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --dog-width: 6em;
+    --gap-dog-width: .5em;
+    --linear-gradient: linear-gradient(90deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    --linear-gradientMensage: linear-gradient(270deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    --linear-gradient-design: linear-gradient(hsl(280, 100%, 63%), hsl(264, 100%, 61%));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Rubik;
+    font-size: .85em;
+}
+
+body {
+    background-color: hsl(270, 20%, 99%);
+    padding: 1px;
+}
+
+.design::before {
+    content: "";
+    width: 50%;
+    height: 50vh;
+    border-radius: 0 0 20em 0;
+    display: block;
+    position: absolute;
+    background-image: var(--linear-gradient-design);
+    z-index: -1;
+}
+
+.section-mobile {
+    margin-top: 2em;
+}
+
+.phone-container {
+    background-color: hsl(270, 20%, 96%);
+    width: 17em;
+    margin: 1em auto 3em;
+    border-radius: 2em;
+    border: .6em solid #fff;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.068);
+}
+
+.phone-container .cam::after {
+    content: "";
+    display: block;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 9em;
+    height: 1.4em;
+    transform: translate(3.46em, -1px);
+    border-radius: 0 0 1.2em 1.2em;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: .6em;
+    padding: 2em 1em 1em;
+    background-image: var(--linear-gradient);
+    border-radius: 1.4em 1.4em .4em .4em;
+
+}
+
+.return-icon::before {
+    content: "";
+    display: block;
+    background-color: white;
+    width: .5em;
+    height: 1em;
+    clip-path: polygon(70% 20%, 100% 20%, 70% 50%, 100% 80%, 70% 80%, 40% 50%);
+}
+
+.contact>img {
+    width: 1.6em;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.contactInfo {
+    font-size: .65em;
+    flex-grow: 1;
+    line-height: 1.6;
+}
+
+.contactInfo_name {
+    color: white;
+    font-weight: bold;
+}
+
+.contactInfo_status {
+    font-size: .8em;
+    color: hsl(0 0% 100% / .7);
+}
+
+.elipsis-vertical img {
+    width: .2em;
+}
+
+.margin {
+    margin: 1rem;
+}
+
+.content {
+    font-size: .5em;
+}
+
+.content .right p {
+    padding: 1em;
+    border-radius: 1em 1em .2em 1em;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: hsl(271, 15%, 43%);
+}
+
+.content .right {
+    margin: .8em 0 .8em auto;
+    width: 66%;
+}
+
+.content .p {
+    width: 60%;
+    margin: 1em 0;
+    color: hsl(276, 55%, 52%);
+}
+
+.content .p p {
+    background-color: hsl(270, 20%, 92%);
+    padding: 1em;
+    border-radius: 1em 1em 1em .2em;
+}
+
+.content .fit {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.8em;
+}
+
+.content .fit p {
+    width: fit-content;
+}
+
+.content_dogs {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--gap-dog-width);
+}
+
+.content_dogs img {
+    width: var(--dog-width);
+    border-radius: 2em;
+    margin-top: 1.4em;
+}
+
+.content .minutes {
+    width: 75%;
+}
+
+.content .minutes p {
+    padding: 1.2em 1.6em 1.2em 1em;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    color: white;
+    background-image: var(--linear-gradientMensage);
+}
+
+.content .minutes p::before {
+    content: "";
+    display: block;
+    background-color: hsl(293, 100%, 63%);
+    border: 1px solid rgb(255 255 255 / .4);
+    border-radius: 50%;
+    width: 1.4em;
+    height: 1.4em;
+}
+
+.span1 {
+    flex-grow: 1;
+    display: block;
+    margin-left: 1em;
+}
+
+.span2 {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.send {
+    margin-top: 1.4em;
+}
+
+.send input[type="text"] {
+    width: 100%;
+    padding: .8em;
+    border-radius: 2em;
+    border: none;
+}
+
+.send input[type="text"]::placeholder {
+    font-size: .8em;
+}
+
+.send input[type="image"] {
+    position: absolute;
+    transform: translate(-2em, .6em);
+}
+
+.section-description {
+    margin: 0 1.8em 1em;
+    text-align: center;
+}
+
+.section-description h1 {
+    font-size: 2.4em;
+    margin-bottom: .6em;
+    font-weight: 600;
+    color: hsl(271, 36%, 24%);
+}
+
+.section-description article {
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: hsl(270, 7%, 64%);
+}
