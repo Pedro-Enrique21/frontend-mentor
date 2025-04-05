@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+html {
+    height: 100%;
+    font-family: "Red Hat Display"
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    height: 100%;
+    background-image: url("order-summary-component-main/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section {
+    background-color: hsl(255, 100%, 100%);
+    width: 28em;
+    height: 44em;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    box-shadow: 0px 30px 25px hsla(223, 18%, 15%, 0.15);
+}
+
+.img-primary {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.article-content {
+    text-align: center;
+    margin: 3em 3em 0 3em;
+}
+
+.article-content h1 {
+    color: hsl(223, 47%, 23%);
+    margin: 0;
+    font-size: 1.7em;
+    font-weight: 850;
+}
+
+article p {
+    color: hsl(224, 23%, 55%);
+    line-height: 1.6em;
+    font-weight: 600;
+}
+
+.plan-content {
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    margin: 0 3em 0em 3em;
+    padding: 1.5em;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.plan-content img {
+    margin-right: .8em;
+}
+
+.plan-content_price {
+    display: flex;
+    flex-direction: column;
+    gap: .4em;
+    flex-grow: 1;
+}
+
+.plan-content_price .span-1 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 1000;
+}
+
+.plan-content_price .span-2 {
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+
+.plan-content a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 600;
+}
+
+.button-content {
+    margin: 2em 3em 3em 3em;
+    text-align: center;
+}
+
+.button-content a:nth-child(1) {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    display: block;
+    box-shadow: 0px 25px 15px hsla(245, 75%, 52%, .200);
+    margin-bottom: 2.2em;
+    padding: 1.1em;
+    border-radius: 10px;
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+.button-content a:nth-child(2) {
+    color: hsl(224, 23%, 55%);
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+@media (width <=31.25em) {
+    html {
+        font-size: .8em;
+    }
+
+    body {
+        background-image: none;
+    }
+
+    section {
+        width: 25em;
+        height: 44em;
+    }
+
+    .article-content {
+        margin: 2.5em 3em 2em 3em;
+    }
+
+    .article-content p {
+        font-size: 1.1em;
+    }
+
+    .plan-content {
+        margin: 0 2em 2em 2em;
+    }
+
+    .button-content {
+        margin: 2em;
+    }
+}
